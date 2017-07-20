@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+/*盒子*/
+.box{
+    width: 700px;
+    height: 600px;
+    border: 1px solid #000;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-image:url('img/bg.jpg');
+}
+.left,.right{
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-family: '宋体';
+    cursor: pointer;
+}
+.left{
+    bottom: 6px;
+    background: rgba(0,0,0,0.5);
+}
+.right{
+    bottom: 46px;
+    background: rgba(43,56,22,0.5);
+}
+.poker{
+    position: absolute;
+    left: 50%;
+    top:0;
+    width: 90px;
+    height: 130px;
+    background-size: 100%;
+    opacity: 0;
+    transition: margin-top 0.3s linear;
+}
+.active{
+    margin-top: -20px;
+    box-shadow: 0 3px 3px #555;
+}
